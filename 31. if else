@@ -1,0 +1,5 @@
+yosh = int(input("Yoshingiz nechida?>>>"))
+if yosh>=18: # yosh 18 dan katta yoki teng bo'lsa
+    print('Xush kelibsiz!')
+else: # ask holda
+    print('Kirish mumkin emas!')

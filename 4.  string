@@ -1,0 +1,36 @@
+# string
+shahar = "Қўқон"
+viloyat = ' Фарғона'
+print(shahar + viloyat)
+print(shahar,viloyat)
+matn = "Men yangi 📱 oldim"
+print(matn)
+ism = 'Ahmad'
+print("Mening ismim " + ism)
+ism = "jojo"
+familiya = 'moco'
+ism_sharif = f"{ism} {familiya}"
+print(ism_sharif)
+ism = "James"
+familiya = 'Bond'
+print(f"Salom, mening ismim {familiya}. {ism} {familiya}!")
+print('Hello World!')
+print('Hello \tWorld!')
+print('Hello \nWorld!')
+ism = 'moco'
+familiya = 'jJojo'
+ism_sharif = f"{ism} {familiya}"
+print(ism_sharif.upper())
+ism = 'jojO'
+familiya = 'moCooO'
+ism_sharif = f"{ism} {familiya}"
+print(ism_sharif.lower())
+ism_sharif = 'james bond'
+print(ism_sharif.title())
+ism_sharif = 'james bond'
+print(ism_sharif.capitalize())
+meva = "     olma     "
+print("Men " + meva.lstrip() + " yaxshi ko'raman")
+print("Men " + meva.rstrip() + " yaxshi ko'raman")
+print("Men " + meva.strip() + " yaxshi ko'raman")
+print("Men " + meva + " yaxshi ko'raman")

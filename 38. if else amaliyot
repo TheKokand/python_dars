@@ -1,0 +1,6 @@
+# Foydalanuvchidan 2 ta son kiritishni so'rang. Agar ikki son bir-biriga teng bo'lsa, "Sonlar teng" ekan degan yozuvni konsolga chiqaring.
+print("2 ta son kiriting")
+x=float(input("1- son : "))
+y=float(input("2- son : "))
+if x==y:
+  print("sonlar teng")

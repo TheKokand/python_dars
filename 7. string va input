@@ -1,0 +1,6 @@
+# string va input
+kocha=input("Ko'chani kiriting: ")
+mahalla=input("Mahallani kiriting: ")
+tuman=input("Tumanni kiriting: ")
+viloyat=input("Viloyatni kiriting: ")
+print(f"{kocha} ko'chasi, {mahalla} mahallasi, {tuman} tumani, {viloyat} viloyati.")

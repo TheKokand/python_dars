@@ -1,0 +1,5 @@
+# t_shaxslar va z_shaxslar degan 2 ta ro'yxat yarating va biriga o'zingiz eng ko'p hurmat qilgan tarixiy shaxslarning, ikkinchisiga esa zamonamizdagi tirik bo'lgan shaxslarning ismini kiriting.
+t_shaxlar=['ford', 'telsa', 'nyuton']
+z_shaxslar=['geyts', 'ilon', 'durov']
+# Yuqoridagi ro'yxatlarning har biridan bittadan qiymatni sug'urib olib (.pop()), quyidagi ko'rinishda chiqaring:
+print(f"{t_shaxlar.pop(0)} arzon avtomobillar ishlab ciqargan.\n {z_shaxslar.pop(2)} telegram asoscisi")

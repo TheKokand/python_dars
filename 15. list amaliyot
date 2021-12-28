@@ -1,0 +1,4 @@
+# ismlar degan ro'yxat yarating va kamida 3 ta yaqin do'stingizning ismini kiriting
+ismlar=['mucci','olim','odil']
+# Ro'yxatdagi har bir do'stingizga qisqa xabar yozib konsolga chiqaring:
+print(f"{ismlar[0]} san ciroylisan\n{ismlar[1]} tomin ketganmi sani\n{ismlar[2]} e bor yuqal")

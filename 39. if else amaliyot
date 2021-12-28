@@ -1,0 +1,8 @@
+# Foydalanuvchidan istalgan son kiritishni so'rang. Agar son manfiy bo'lsa konsolga "Manfiy son", agar musbat bo'lsa "Musbat son" degan xabarni chiqaring.
+son = float(input("Istalga nson kiriting: "))
+if son > 0:
+  print("musbat son")
+elif son < 0:
+  print("manfiy son")
+else:
+  print("0")    

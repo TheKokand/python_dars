@@ -1,0 +1,20 @@
+# O'zingizga ma'lum davlatlarning ro'yxatini tuzing va ro'yxatni konsolga chiqaring
+davlatlar = ['kirgiziya','uzbekiya', 'tojikiya', 'kazakiya', 'turmeniya']
+print(davlatlar)
+# Ro'yxatning uzunligini konsolga chiqaring
+print(len(davlatlar))
+# sorted() funktsiyasi yordamida ro'yxatni tartiblangan holda konsolga chiqaring
+print(sorted(davlatlar))
+# sorted() yordamida ro'yxatni teskari tartibda konsolga chiqaring
+print(sorted(davlatlar,reverse=True))
+# Asl ro'yxatni qaytadan konsolga chiqaring
+print(davlatlar)
+# reverse() metodi yordamida ro'yxatni ortidan boshlab chiqaring
+#reverse() metodi yordamida ro'yxatni ortidan boshlab chiqaring
+davlatlar.reverse()
+print(davlatlar)
+#sort() metodi yordamida ro'yxatni avval alifbo bo'yicha, keyin esa alifboga teskari tartibda konsolga chiqaring.
+davlatlar.sort()
+print(davlatlar)
+davlatlar.sort(reverse=True)
+print(davlatlar)

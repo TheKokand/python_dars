@@ -1,0 +1,6 @@
+# Foydalanuvchidan 5 ta eng sevimli kinolarini kiritshni so'rang, va kinolar degan ro'yxatga saqlab oling. Natijani konsolga chiqaring.
+kinolar=[]
+for n in range(0,5):
+  
+  kinolar.append(input(f"{n+1}-kinoni kiriting: "))
+print(kinolar)  

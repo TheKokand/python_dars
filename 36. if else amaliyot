@@ -1,0 +1,17 @@
+# if else AMALIYOT
+# Yangi cars = ['toyota', 'mazda', 'hyundai', 'gm', 'kia'] degan ro'yxat tuzing, ro'yxat elementlarining birinchi harfini katta qilib konsolga chqaring. GM uchun ikkala harfni katta qiling.
+cars=['toyota','mazda','hyundai','gm','kia']
+for car in cars:
+  if car=='gm':
+    car=car.upper()
+  else:
+    car=car.title()
+  print(car)    
+print("\n")
+# Yuqoridagi mashqni teng emas (!=) operatori yordamida bajaring.
+for car in cars:
+  if car!='gm':
+    car=car.title()
+  else:
+    car=car.upper()
+  print(car)    

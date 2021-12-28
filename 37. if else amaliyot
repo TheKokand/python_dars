@@ -1,0 +1,6 @@
+# Foydalanuvchi login ismini so'rang. Agar login admin bo'lsa, "Xush kelibsiz, Admin. Foydalanuvchilar ro'yxatini ko'rasizmi?" xabarini konsolga chiqaring. Aks holda, "Xush kelibsiz, {foydalanuvchi_ismi}!" matnini konsolga chiqaring.
+login=input("Loginingizni kiriting: ").lower()
+if login=='admin':
+  print(f"Xuh kelibsiz {login.title()}. ruyhatni kurasmi?")
+else:
+  print(f" xa sanmisan {login} kel.")  

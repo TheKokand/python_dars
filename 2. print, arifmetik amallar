@@ -1,0 +1,31 @@
+# 2-dastur
+print("Assalom alaykum")
+print("Xayrli tong!")
+print('Xayrli tong!')
+print('Men "Dell" markasidagi noutbuk sotib oldim')
+# Yuqoridagi matnda "Dell" so'zi qo'shtirnoq ichida eda. Bu matnni konsolga chiqarish uchun esa, print() funktsyasi ichida matnni birtirnoq ichiga oldik. Agar matnni bir necha qatorga bo'lib yozish talab qilinsa, uchtalik qo'shtirnoq (""" """) yoki birtirnoqdan (''' ''')foydalanish mumkin:
+print("""Odami ersang, demagil odami,
+Oniki, yo'q xalq g'amidin g'ami
+'kimdir yozganda shuni'""")
+print('\n')
+# Qatorga bo'lishning yana bir usuli, qator so'nggida \n belgisini qo'yish.
+print("Odami ersang, demagil odami,\nOniki, yo'q xalq g'amidin g'ami")
+print("\n")
+print('Odami ersang, demagil odami, \nOniki, yo\'q xalq g\'amidin g\'ami')
+print('Odami ersang, demagil odami,\nOniki, yo\'q xalq g\'amidin g\'ami')
+# ARIFMETIK AMALLAR
+print(2+4*2)
+print(19/5)
+#Radiusi 5 ga teng bo'lgan aylananing uzunligi quyidagicha hisoblanadi
+print(2*5*3.14159)
+# AMALIYOT
+print("\nAmaliyot\n")
+print('"Nexia", "Tico", \'Damas\' ko\'rganlar qilar havas')
+print('5 ning 4-darajasini toping: ' ,5**4)
+
+print("22 ni 4 ga bo'lganda qancha qoldiq: ", 22%4)
+
+print("Tomonlari 125 ga teng kvadratning yuzi va perimetrini toping?", "\nKvadratning yuzi ", 125*2, " ga teng. Kvadratning primetri ", 125*4, " ga teng.\n")
+print("Diametri 12 ga teng bo'lgan doiraning yuzini toping PI=3.14", "\nDiamert ", 3.14*12, " ga teng.\n")
+print("Katetlari 6 va 7 bo'lgan to'g'ri burchakli uchburchakning gipotenuzasini toping.")
+print("Gipotenuza ", ((6**2)+(7**2))**(1/2), " ga teng.")

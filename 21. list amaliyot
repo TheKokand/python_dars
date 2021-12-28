@@ -1,0 +1,13 @@
+# 120 dan 1200 gacha bo'lgan juft sonlar ro'yxatini tuzing
+juft_sonlar=list(range(120,1200,2))
+#print(juft_sonlar)
+# Ro'yxatdagi sonlar yig'indisini hisoblang va konsolga chiqaring
+print(sum(juft_sonlar))
+# Ro'yxatdagi eng katta va eng kichik son o'rtasidagi ayirmani hisoblang va konsolga chiqaring
+print(juft_sonlar[-1]-juft_sonlar[1])
+# Ro'yxatdagi elementlar sonini hisoblang
+print(len(juft_sonlar))
+# Ro'yxatning boshidan, o'rtasidan va oxiridan 20 ta qiymatni konsolga chiqaring
+print(juft_sonlar[:20])
+print(juft_sonlar[260:280])
+print(juft_sonlar[520:])

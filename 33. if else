@@ -1,0 +1,6 @@
+yil = int(input("Tug'ilgan yilingizni kiriting:"))
+if 2020-yil<18: # foydalanuvchining yoshini hisoblaymiz
+    print(f"Yoshingiz {2020-yil}da ekan.")
+    print("Kirish mumkin emas!")
+else:
+    print("Xush kelibsiz!")

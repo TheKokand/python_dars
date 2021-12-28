@@ -1,0 +1,6 @@
+# Kamida 5 elementdan iborat ismlar degan ro'yxat tuzing, va ro'yxatdagi har bir ismga takrorlanuvchi xabar yozing
+ismlar=['mucci','olim','vika','jojo','odil']
+for ism in ismlar:
+  print(f"{ism} salom qalesan yaramas.")
+# Yuqoridagi tsikl tugaganidan so'ng, ekranga "Kod n marta takrorlandi" degan xabarni chiqaring (n o'rniga kod necha marta takrorlanganini yozing)  
+print("kod " , len(ismlar) , " marta takrorlandi.")

@@ -1,0 +1,6 @@
+# INPUT — FOYDALANUVCHI BILAN MULOQOT
+ism = input("Ismingizni kiriting: ")
+print(ism)
+# 
+ism = input("Ismingiz nima?\n>>>") # Foydalanuvchi ismini yangi qatordan kiritadi
+print("Assalom alaykum, " + ism.title())

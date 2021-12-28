@@ -1,0 +1,8 @@
+# Foydalanuvchidan ikki son kiritshni so'rab, kiritilgan sonlarning yig'indisi, ayirmasi, ko'paytmasi va bo'linmasini chiqaruvchi dastur
+x=float(input("1-sonni kiriting: "))
+y=float(input("2-sonni kiriting: "))
+yigindi=x+y
+ayirma=x-y
+kupaytma=x*y
+bulinma=x/y
+print(f"{x} va {y} sonlar \nyigindisi={yigindi}\n ayitmasi={ayirma}\n kupaytmasi={kupaytma}\n bulinmasi={bulinma} ga teng.")

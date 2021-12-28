@@ -1,0 +1,3 @@
+# Foydalanuvchining yoshini so'rab, uning tug'ilgan yilini hisoblab, konsolga chiqaruvchi dastur
+yosh=int(input("Yoshingizni kiriting: \n>>>> "))
+print(f"Siz {2021-yosh} yilsiz.")

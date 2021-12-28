@@ -1,0 +1,12 @@
+# string va input
+kocha=input("Ko'chani kiriting: ")
+mahalla=input("Mahallani kiriting: ")
+tuman=input("Tumanni kiriting: ")
+viloyat=input("Viloyatni kiriting: ")
+print(f" {kocha} ko'chasi, {mahalla} mahallasi, {tuman} tumani, {viloyat} viloyati.")
+# Yuqoridagi matnni konsolga chiqarishda har bir verguldan keyin yangi qatordan yozing
+
+# Yuqoridagi o'zgaruvchilarni f-string yordamida, yangi, manzil deb nomlangan o'zgaruvchiga yuklang
+manzil=f" {kocha.title()} ko'chasi\n {mahalla.upper()} mahallasi\n {tuman} tumani\n {viloyat} viloyati"
+print(manzil)
+#manzilga biz yuqorida o'rgangan title(), upper(), lower() , capitalize() metodlarini qo'llab ko'ring.

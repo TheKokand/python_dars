@@ -1,0 +1,4 @@
+# sonlar deb nomlangan ro'yxat yarating va ichiga turli sonlarni yuklang (musbat, manfiy, butun, o'nlik).
+sonlar=[15, 352, 27, 10, -90, -0.52, 27.27]
+#Yuqoridagi ro'yxatdagi sonlar ustida turli arifmetik amallar bajarib ko'ring. Ro'yxatdagi ba'zi sonlarning qiymatini o'zgartiring, ba'zilarini esa almashtiring.
+print(f"{sonlar[1]*sonlar[0]}")

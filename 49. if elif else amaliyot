@@ -1,0 +1,10 @@
+# Foydalanuvchidan ikita son kiritishni so'rang, sonlarni solishtiring va ularning teng yoki katta/kichikligi haqida xabarni chiqaring
+print("2 ta so kiriting.")
+x=float(input("x = "))
+y=float(input("y = "))
+if x>y:
+  print(f"{x} {y} dan katta")
+elif x<y:
+  print(f"{y} {x} dan kotta")
+else:
+  print("sonlar teng")    

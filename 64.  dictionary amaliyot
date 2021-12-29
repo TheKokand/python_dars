@@ -1,0 +1,22 @@
+# Restoran menusi lug'atini tuzing (kamida 10 ta taom-narh juftligini kiriting). Foydalanuvchidan 3 ta ovqat buyurtma berishni so'rang. Foydalanuvchi kiritgan taomlarni menu bilan solishtiring, agar taom menuda bo'lsa narhini ko'rsating, aks holda "bizda bunday taom yo'q" degan xabarni chiqaring.
+menu={
+  'osh':15000,
+  'somsa':2000,
+  'norin':18000,
+  'kabob':14000,
+  'qozon kabob':35000,
+  'lagmon':18000,
+  'manti':5000,
+  'mastava':10000,
+  'shurva':15000,
+  'dimlama':25000
+}
+buyurtma=[]
+print("3 ta ovqat kiriting.")
+for n in range(1,4):
+  buyurtma.append(input(f"{n}-taom: "))
+for taom in buyurtma:
+  if taom in menu:
+    print(f"{taom} narxi {menu[taom]}")
+  else:
+    print("Bizda bunday taom yuq.")    

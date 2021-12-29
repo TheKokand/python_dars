@@ -1,0 +1,13 @@
+# Davlatlar va ularning poytaxtlari lug'atini tuzing. Avval lug'atdagi davlatlarni, keyin poytaxtlarni alohida-alohida, alifbo ketma-ketligida konsolga chiqaring.
+davlatlar={
+  'uzbekiston':'toshkent',
+  'kirgiziston':'biwkek',
+  'kazakiston':'nursulton'
+}
+print('Dunyo davlatlari:')
+for davlat in sorted(davlatlar):
+    print(davlat.upper())
+
+print('\nDavlatlarning poytaxtlari')
+for poytaxt in sorted(davlatlar.values()):
+    print(poytaxt.title())

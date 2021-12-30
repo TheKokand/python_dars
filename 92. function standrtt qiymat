@@ -1,0 +1,7 @@
+# STANDART QIYMAT
+def yosh_hisobla(tugilgan_yil, joriy_yil=2020): # joriy yil uchun st.qiymat 2020
+    """Foydalanuvchi tug'ilgan yilidan uning yoshini hisoblaydi"""
+    print(f"Siz {joriy_yil-tugilgan_yil} yoshdasiz")
+
+yosh_hisobla(1995,2020)    
+yosh_hisobla(1993)

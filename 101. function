@@ -1,0 +1,7 @@
+# Foydalanuvchidan son qabul qilib, sonni 2 dan 10 gacha bo'lgan sonlarga qoldiqsiz bo'linishini tekshiruvchi funksiya yozing. Natijalarni konsolga chiqaring.
+def son(x):
+  for n in range(2,11):
+    if x%n==0:
+      print(f"{x} i {n} ga  qoldiqsiz bulinadi")
+
+son(36)

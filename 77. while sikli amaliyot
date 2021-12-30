@@ -1,0 +1,10 @@
+# while sikli AMALIYOT 
+# Foydalanuvchidan yaxshi ko'rgan kitoblarini kiritishni so'rang. Foydalanuvchi stop so'zini yozishi bilan dasturni to'xtating
+print("Sevimli kitoblarni kiritish ")
+
+while True:
+  kitob = input("men yoqtirgan kitob...")
+  qiymat= input("Tuxtatih uchun stop yozin ")
+  if qiymat=='stop':
+    break
+

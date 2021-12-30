@@ -1,0 +1,6 @@
+def yosh_hisobla(tugilgan_yil, joriy_yil=2020):
+    """Foydalanuvchi tug'ilgan yilidan uning yoshini hisoblaydi"""
+    print(f"Siz {joriy_yil-tugilgan_yil} yoshdasiz")
+    
+tyil = int(input("Tug'ilgan yilingizni kiriting: "))
+yosh_hisobla(tyil)

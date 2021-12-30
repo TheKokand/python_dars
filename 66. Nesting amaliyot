@@ -1,0 +1,40 @@
+# Adabiyot (ilm-fan, san'at, internet) olamidagi 4 ta mashxur shaxlar haqidagi ma'lumotlarni lug'at ko'rinishida saqlang. Lug'atlarni bitta ro'yxatga joylang, va har bir shaxs haqidagi ma'lumotni konsolga chiqaring.
+malibu={
+  'model':'malibu',
+  'kompaniy':'gm',
+  'yili':2020,
+  'km':20000,
+  'rangi':'oq',
+  'korobka':'mexanika',
+  'narxi':25000
+}
+kiaK5={
+  'model':'kia K5',
+  'kompaniya':'kia',
+  'yili':2020,
+  'km':6500,
+  'rangi':'qora',
+  'korobka':'avto',
+  'narxi':35000
+}
+tuscon={
+  'model':'tuscon',
+  'kompaniya':'hyundai',
+  'yili':2021,
+  'km':10000,
+  'rangi':'silver',
+  'korobka':'avto',
+  'narxi':40000
+  }
+matiz={
+  'model':'matiz',
+  'kompaniya':'gm',
+  'yili':2000,
+  'km':250000,
+  'rangi':'oq',
+  'korobka':'maxanika',
+  'narxi':2500
+}  
+cars=[malibu,kiaK5,tuscon,matiz]
+for car in cars:
+  print(f"{car['model']} {car['rangi']} {car['yili']} yili {car['narxi']}")

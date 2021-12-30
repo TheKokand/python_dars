@@ -1,0 +1,5 @@
+# Foydalanuvchidan son olib, uning kvadrati va kubini konsolga chiqaruvchi funksiya yozing.
+def son(n):
+  print(f"{n} ning kvadrati {n**2}, kubi {n**3}")
+
+son(5)

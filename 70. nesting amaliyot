@@ -1,0 +1,28 @@
+# Davlatlar degan lug'at yarating, lug'at ichida bir nechta davlatlar haqida ma'lumotlarni lug'at ko'rinishida saqlang. Har bir davlat haqida ma'lumotni konsolga chiqaring.
+davlatlar={
+  'uzbekiston':{
+    'poytaxti':'toshkent',
+    'valyuta':'so\'m',
+    'aholi':37_000_000
+  },
+  'kigiziston':{
+    'poytaxti':'biwkek',
+    'valyuta':'som',
+    'aholi':8_000_000
+  },
+  'kazakiston':{
+    'poytaxti':'nursulton',
+    'valyuta':'tenge',
+    'aholi':15_0000_000
+  }
+}
+# Yuqoridagi dasturga o'zgartirish kiriting: konsolga barcha davlatlarni emas, foydalanuvchi so'ragan davlat haqida ma'lumot bering. Agar davlat sizning lug'atingizda mavjud bo'lmasa, "Bizda bu davlat haqida ma'lumot yo'q" degan xabarni chiqaring.
+kalit=input("davlat nomini kiriting: ")
+if kalit in davlatlar:
+  davlat=davlatlar[kalit]
+  print(f"{kalit.title()} haqidagi malumotlar")
+  print(f"poytaxti {davlat['poytaxti']}")
+  print(f"valyutasi {davlat['valyuta']}")
+  print(f"aholisi {davlat['aholi']}")
+else:
+  print(f"{kalit} haiqda malumot yuq")  

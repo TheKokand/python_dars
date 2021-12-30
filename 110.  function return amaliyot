@@ -1,0 +1,15 @@
+# Berilgan oraliqdagi tub sonlar ro'yxatini qaytaruvchi funksiya yozing (tub sonlar —faqat birga va o'ziga qoldiqsiz bo'linuvchi, 1 dan katta musbat sonlar)
+def tub_top(min,max):
+  tub_sonlar=[]
+  for n in range(min,max+1):
+    if n==1:
+      continue
+    summa=0
+    for m in range(2,n):
+      if n%m==0:
+        summa+=m
+    if summa==0:
+      tub_sonlar.append(n)
+  return tub_sonlar
+
+print(tub_top(1,200))          

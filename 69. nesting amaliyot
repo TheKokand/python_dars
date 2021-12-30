@@ -1,0 +1,22 @@
+# Davlatlar degan lug'at yarating, lug'at ichida bir nechta davlatlar haqida ma'lumotlarni lug'at ko'rinishida saqlang. Har bir davlat haqida ma'lumotni konsolga chiqaring.
+davlatlar={
+  'uzbekiston':{
+    'poytaxti':'toshkent',
+    'valyuta':'so\'m',
+    'aholi':37_000_000
+  },
+  'kigiziston':{
+    'poytaxti':'biwkek',
+    'valyuta':'som',
+    'aholi':8_000_000
+  },
+  'kazakiston':{
+    'poytaxti':'nursulton',
+    'valyuta':'tenge',
+    'aholi':15_0000_000
+  }
+}
+for kalit, qiymat in davlatlar.items():
+  print(f"{kalit} haqidagi malumotlar")
+  for k, q in qiymat.items():
+    print(f"{k} - {q}")

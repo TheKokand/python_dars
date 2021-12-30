@@ -1,0 +1,21 @@
+# FUNKSIYADAN RO'YXAT QAYTARAMIZ
+def oraliq(min,max):
+    sonlar = [] # bo'sh ro'yxat
+    while min<max:
+        sonlar.append(min)
+        min += 1
+    return sonlar
+
+print(oraliq(0,10))
+print(oraliq(10,21))
+
+
+print("\n")
+# >>> print(oraliq(0,21,2)) # 0 dan 21 gacha 2 qadam bilan
+def oraliq(min,max, qadam=1):
+    sonlar = [] # bo'sh ro'yxat
+    while min<max:
+        sonlar.append(min)
+        min += qadam
+    return sonlar
+print(oraliq(0,21,2))    

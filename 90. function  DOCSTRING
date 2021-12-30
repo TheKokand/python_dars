@@ -5,3 +5,4 @@ def salom_ber(ism):
     print(f"Assalomu alaykum, hurmatli {ism.title()}!")
 salom_ber('ali')    
 salom_ber('mucici')
+print(salom_ber.__doc__)

@@ -1,0 +1,26 @@
+# e-bozor uchun mahsulotlar va ularning narhlari lug'atini shakllantiruvchi dastur yozing. Foydalanuvchidan lug'atga bir nechta elementlar (mahsulot va uning narhi) kiritishni so'rang.
+bozor={}
+yana=1
+while yana:
+  mahsulot=input("mahsulot nomini kiriting: ")
+  narx=float(input("mahsulot naxrxini kiriting: "))
+  bozor['mahsulot']=narx
+  yana=int(input("Davom ettirsh uchun 1 ni tugatish uchun 0 ni bosin - "))
+
+# Yuqoridagi ikki dasturni jamlaymiz. Foydalanuvchi buyurtmasi ro'yxatidagi har bir mahsulotni e-bozordagi mahsulotlar bilan solishitiring (tayyor ro'yxat ishlatishingiz mumkin). Agar mahsuot e-bozorda mavjud bo'lsa mahuslot narhini chiqaring, aks holda "Bizda bu mahsulot yo'q" degan xabarni kor'sating.
+
+# Foydalanuvchidan buyurtma qabul qiluvchi dastur yozing. Mahsulotlar nomini birma-bir qabul qilib, yangi ro'yxatga joylang.
+print("Buyurmt bering.")
+buyurtma=[]
+while True:
+  buyurtma.append(input("buyurtma nomi: "))
+  qiymat=input("yana  buyurtma qilasmi yes/no")
+  if qiymat=='no':
+    break
+
+while buyurtma:
+  zakaz=buyurtma.pop()
+  if zakaz in bozor:
+    print(f"{zakaz} narxi {bozor[zakaz]}")
+  else:
+    print(f"{zakaz} mavjud emas")  

@@ -1,0 +1,4 @@
+# Foydalanuvchi ismi va yoshini so'rab, uning tug'ilgan yilini hisoblaydigan funksiya yozing.
+def ism_yosh_kirit(ism,yosh, yil=2021):
+  print(f"{ism}ning tugilgan yili {yil-yosh} ")
+ism_yosh_kirit("mucci",19)  

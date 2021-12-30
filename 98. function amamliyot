@@ -1,0 +1,11 @@
+# Foydalanuvchidan son olib, son juft yoki toqligini konsolga chiqaruvchi funksiya yozing.
+def son_kirit(son):
+  if son%2==0:
+    print(f"{son} juft")
+ 
+  else:
+    print(f"{son} toq")
+son_kirit(11)   
+son_kirit(0)
+son_kirit(20)     
+  

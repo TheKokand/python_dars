@@ -1,0 +1,9 @@
+# Foydalanuvchidan ikkita son olib, ulardan kattasini konsolga chiqaruvchi funksiya yozing. Agar sonlar teng bo'lsa "Sonlar teng" degan xabarni chiqaring.
+def  sonlar(x,y):
+  if x>y:
+    print(f"{x} kotta")
+  elif x<y:
+    print(f"{y} kotta")
+  else:
+    print("sonlar teng")
+sonlar(12,15)        

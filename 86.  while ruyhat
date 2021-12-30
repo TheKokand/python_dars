@@ -1,0 +1,12 @@
+# Foydalanuvchidan buyurtma qabul qiluvchi dastur yozing. Mahsulotlar nomini birma-bir qabul qilib, yangi ro'yxatga joylang.
+print("Buyurmt bering.")
+buyurtma=[]
+while True:
+  buyurtma.append(input("taom nomi: "))
+  qiymat=input("yana taom buyurtma qilasmi yes/no")
+  if qiymat=='no':
+    break
+print("siz bergan buyutmalar qabul qilindi.")
+print("buyurtmalaringiz janob...")
+for ovqat in buyurtma:
+  print(f"{ovqat}", end=' ')    

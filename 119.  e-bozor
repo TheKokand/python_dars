@@ -1,0 +1,48 @@
+# Foydalanuvchidan buyurtma qabul qiluvchi dastur yozing. Mahsulotlar nomini birma-bir qabul qilib, yangi ro'yxatga joylang.
+print("Buyurtma berin.")
+buyurtmalar=[]
+n=0
+while True:
+  n+=1
+  buyurtmalar.append(input(f"{n}- burutma: "))
+  javob=input(f" davom etish 'yes' tugatish 'no' \n>>>> ")
+  if javob=='no':
+    break
+print("Burtmalaringiz qabul qilindi")
+for buyurtma in buyurtmalar:
+  print(buyurtma)  
+# e-bozor uchun mahsulotlar va ularning narhlari lug'atini shakllantiruvchi dastur yozing. Foydalanuvchidan lug'atga bir nechta elementlar (mahsulot va uning narhi) kiritishni so'rang.
+
+print("do'kondagi mahsulotlarni kiriting.")
+bozor={}
+m=0
+while True:
+  m+=1
+  mahsulot=input(f"{m}-mahsulot:  ")
+  narx=float(input("narxi:  "))
+  bozor[mahsulot]=narx
+  j=input(f" davom etish 'yes' tugatish 'no' \n>>>> ")
+  if j=='no':
+    break
+print("sizning mahsulotlaringiz.")
+for tovar, narx in bozor.items():
+  print(f"{tovar} - {narx} so'm")    
+# Yuqoridagi ikki dasturni jamlaymiz. Foydalanuvchi buyurtmasi ro'yxatidagi har bir mahsulotni e-bozordagi mahsulotlar bilan solishitiring (tayyor ro'yxat ishlatishingiz mumkin). Agar mahsuot e-bozorda mavjud bo'lsa mahuslot narhini chiqaring, aks holda "Bizda bu mahsulot yo'q" degan xabarni kor'sating.
+borlar={}
+yuglar=[]
+for zakaz in buyurtmalar:
+  if zakaz in bozor.keys():
+    borlar[zakaz]=bozor[zakaz]
+  else:
+    yuglar.append(zakaz)
+if  yuglar:
+  print("ushbu burtmalringiz dukonimizda xozirca mavjud emas")
+  for yug in yuglar:
+    print(yug)
+    print("quyidagilar dukonimizda mavjud.")
+  for k,q in borlar.items():
+    print(f"{k}-{q} so'm") 
+else:
+  print("Barcha buyurtmalaringiz dukonimizda mavjud.")
+  for k,q in borlar.items():
+    print(f"{k}-{q} so'm")    

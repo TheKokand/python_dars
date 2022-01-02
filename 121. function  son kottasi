@@ -1,0 +1,10 @@
+# Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya yozing
+def kottasini_top(x,y,z):
+  max=x
+  if max<y:
+    max=y
+  elif max<z:
+    max=z
+  return max
+
+print(kottasini_top(15,-96,0))

@@ -1,0 +1,7 @@
+# Istalgancha sonlarni qabul qilib, ularning ko'paytmasini qaytaruvchi funksiya yozing
+def kupaytir(*sonlar):
+  kupaytma=1
+  for son in sonlar:
+    kupaytma*=son
+  return kupaytma
+print(kupaytir(1,2,3))    

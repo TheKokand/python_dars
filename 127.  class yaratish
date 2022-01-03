@@ -1,0 +1,19 @@
+# class yaratish
+class Talaba:
+  """Talaba digan class yaratamiz"""
+  def __init__(self,ism,familiya,tyil):
+    """Talabaning xususiyatlari"""
+    self.ism=ism
+    self.familiya=familiya
+    self.tyil=tyil
+talaba1 = Talaba("Alijon","Valiyev",2000)    
+print(talaba1.ism)
+print(talaba1.familiya)
+print(talaba1.tyil)
+
+# KLASSDAN BIR NECHTA OBYEKTLAR YARATISH
+talaba2 = Talaba("Olim","Olimov",1995)
+talaba3 = Talaba("Husan","Akbarov",2004)
+talaba4 = Talaba("Hasan","Akbarov",2004)
+print(talaba2.ism)
+print(talaba4.familiya)

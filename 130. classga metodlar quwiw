@@ -1,0 +1,36 @@
+# class yasash
+class Talaba:
+  """Talaba nomli klass yaratamiz"""
+  def __init__(self,ism,familiya,tyil):
+    """Talabaning xususiyatlari"""
+    self.name=ism.title()
+    self.familiya=familiya
+    self.tyil=tyil
+
+# KLASSGA METODLAR QO'SHAMIZ
+  def tanishtir(self):
+    print(f"Ismim {self.name} {self.familiya}. {self.tyil}-yilda tugiilganman. ")
+
+# Klassimiz istalgancha metodlardan iborat bo'lishi mumkin:
+  def get_name(self):
+    """Talabaning ismini qaytaradi"""
+    return self.name
+  def get_lastname(self):
+    """Familiyani qataradi"""
+    return self.familiya
+
+  def get_fullname(self):
+    """Talabaning tuliq ismini qaytaradi"""
+    return f"{self.name} {self.familiya}"  
+
+  
+# KLASSDAN OBYEKT YARATAMIZ
+talaba1=Talaba('olim','olimov',1994) 
+talaba2=Talaba('mucci','sulaymon',2002)
+talaba3=Talaba('vika','olimov',2000)
+talaba4=Talaba('odil','adilov',1999)
+talaba4.tanishtir()
+
+print(talaba2.get_name())
+print(talaba2.get_lastname().title())
+print(talaba4.get_fullname().title())

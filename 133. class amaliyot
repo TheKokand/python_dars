@@ -1,0 +1,40 @@
+# Web sahifangiz uchun foydalanuvchi (user) klassini tuzing. Klassning xususiyatlari sifatida odatda ijtimoiy tarmoqlar talab qiladigan ma'lumotlarni kiriting (ism, foydalanuvchi ismi, email, va hokazo)
+class user:
+  """user class ini yarattik"""
+  def __init__(self,nick,ism,familiya,tyil,email):
+    """class xususiyatlari"""
+    self.nick=nick
+    self.ism=ism
+    self.familiya=familiya
+    self.tyil=tyil
+    self.email=email
+
+  def get_nick(self):
+    return self.nick
+
+  def tuliq(self):
+    """foydalanuvchi tuliq malumotini ciqarish"""
+    return f"Foydalanuvchi nick ismi {self.nick}\nismi {self.ism}\nfamiliyasi {self.familiya}\n tugilgan yili {self.tyil}\n email {self.email}"
+
+  def yosh(self,yil):
+    """user yoshini aniqlash"""
+    return yil-self.tyil
+
+  def ism_ol(self):
+    """user ismini ol"""
+    return self.ism
+
+
+
+
+
+user1=user("noon",'mucci','sulaymon',2002,'yunona_888')
+
+print(user1.get_nick())  
+
+# Klassga bir nechta metodlar qo'shing, jumladan get_info() metodi foydalanuvchi haqida yig'ilgan ma'lumotlarni chiroyli qilib chiqarsin (masalan: "Foydalanuvchi: alijon1994, ismi: Alijon Valiyev, email: alijon1994@gmail.com).
+print(user1.tuliq())
+  
+# Klassdan bir nechta obyektlar yarating va uning xususiyatlari va metodlariga murojat qiling.
+print(user1.yosh(2021))
+print(user1.ism_ol())

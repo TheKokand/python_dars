@@ -1,0 +1,21 @@
+# class yasash
+class Talaba:
+  """Talaba nomli klass yaratamiz"""
+  def __init__(self,ism,familiya,tyil):
+    """Talabaning xususiyatlari"""
+    self.name=ism.title()
+    self.familiya=familiya
+    self.tyil=tyil
+# KLASSDAN OBYEKT YARATAMIZ
+talaba1=Talaba('olim','olimov',1994)    
+# OBYKETNING XUSUSIYATLARINI KO'RISH
+print(talaba1.name)
+print(talaba1.familiya.title())
+print(talaba1.tyil)
+# KLASSDAN BIR NECHTA OBYEKTLAR YARATISH
+talaba2=Talaba('mucci','sulaymon',2002)
+talaba3=Talaba('vika','olimov',2000)
+talaba4=Talaba('odil','adilov',1999)
+
+print(talaba2.name)
+print(talaba4.familiya.title())

@@ -1,0 +1,85 @@
+class Shaxs:
+  """Shaxs digan class yaratamiz"""
+  def __init__(self,ism,familiya,passport,tyil):
+    self.ism=ism
+    self.familiya=familiya
+    self.passport=passport
+    self.tyil=tyil
+
+  def get_info(self):
+    """Shaxs haqida malumot"""
+    info=f"{self.ism} {self.familiya} "
+    info+=f"Passport: {self.passport}, {self.tyil}-yilda tugilgan"
+    return info
+
+  def get_age(self,yil):
+    """Shaxs yoshini qaytaradigan metod"""
+    return yil-self.tyil
+
+inson=Shaxs("Olim",'olimov','RW505050',1900)
+
+class Fan():
+  """Fan nomli class"""
+  def __init__(self,nomi):
+    self.nomi=nomi
+    return self.nomi
+
+# VORIS KLASS YARATISH
+class Talaba(Shaxs):
+  """voris klass talaba"""
+  def __init__(self,ism,familiya,passport,tyil,idraqam,manzil):
+    super().__init__(ism,familiya,passport,tyil)
+    self.idraqam=idraqam
+    self.bosqich=1
+    self.manzil=manzil
+    self.fanlar=[]
+
+  def get_id(self):
+    return self.idraqam
+
+  def get_bosqich(self):
+    return self.bosqich
+
+  def get_info(self):
+    """Talabaning haqida malumot"""
+    info=f"{self.ism} {self.familiya}. "
+    info+=f"{self.get_bosqich()}-bosqich. ID raqami {self.idraqam}."  
+    return info
+# Talaba klassiga fanga_yozil() degan yangi metod yozing. Bu metod parametr sifatida Fan klassiga tegishli obyektlarni qabul qilib olsin va talabaning fanlar ro'yxatiga qo'shib qo'ysin.
+  def fanga_yozil(Fan):
+    return Fan
+
+# OBYEKT ICHIDA OBYEKT
+class Manzil:
+  """Manzil saqlaw ucun klass"""
+  def __init__(self,uy,kocha,shahar,viloyat):
+    self.uy=uy
+    self.kocha=kocha
+    self.shahar=shahar
+    self.viloyat=viloyat
+    
+  def get_manzil(self):
+    """Manzil kurish"""
+    manzil=f"{self.viloyat} viloyati {self.shahar} shahri,"
+    manzil+=f"{self.kocha} kochasi, {self.uy} - uy"
+    return manzil 
+
+# Fan degan yangi klass yarating va bu klassdan turli fanlar uchun alohida obyektlar yarating.
+
+
+
+tarix=Fan("Islom Tarixi")
+matematika=Fan("Oliy matematika")
+tabiat=Fan("Qizil kitob")
+
+
+
+
+
+
+# VORIS KLASSGA XOS XUSUSIYATLAR VA METODLAR
+# POLIMORFIZM — SUPER KLASS METODLARINI QAYTA YOZISH
+
+
+# Talaba klassiga yana bir, fanlar degan xususiyat qo'shing. Bu xususiyat parametr sifatida uzatilmasin va obyekt yaratilganida bo'sh ro'yxatdan iborat bo'lsin (self.fanlar=[])
+

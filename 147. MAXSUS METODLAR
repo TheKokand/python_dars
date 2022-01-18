@@ -1,0 +1,15 @@
+# maxsus metodlar
+class Avto:
+  __num_avto=0
+  """avto classi"""
+  def __init__(self,make,model,rang,yil,narh):
+    """avtoning xususiyatlari"""
+    self.make=make
+    self.model=model
+    self.rang=rang
+    self.yil=yil
+    self.narh=narh
+    Avto.__num_avto+=1
+
+print(dir(Avto))    
+  

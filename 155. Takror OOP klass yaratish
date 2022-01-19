@@ -1,0 +1,26 @@
+# KLASS YARATISH
+
+class Talaba:
+  """talaba nomli klass yaratamiz"""
+  def __init__(self,ism,familiya,tyil):
+    self.name=ism
+    self.lastname=familiya
+    self.byear=tyil
+
+talaba1=Talaba('Olim','Alimov',1880)
+
+# obyektning xususiyatlarini kurish
+print(talaba1.name)    
+print(talaba1.lastname)
+print(talaba1.byear)
+
+# KLASSDAN BIR NECHTA OBYEKTLAR YARATISH
+talaba2 = Talaba("Olim","Olimov",1995)
+talaba3 = Talaba("Husan","Akbarov",2004)
+talaba4 = Talaba("Hasan","Akbarov",2004)
+
+# bunda har bir obyekt uzining alohida xususiyati ega buladi
+
+print(talaba2.name)
+
+print(talaba4.lastname)

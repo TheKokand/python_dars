@@ -1,0 +1,50 @@
+# KLASS YARATISH
+
+class Talaba:
+  """talaba nomli klass yaratamiz"""
+  def __init__(self,ism,familiya,tyil):
+    self.name=ism
+    self.lastname=familiya
+    self.byear=tyil
+
+  def tanishtir(self):
+    print(f"Ismim {self.name} {self.lastname}. {self.byear} yilda tu'gilganman")  
+
+
+# Klassimiz istalgancha metodlardan iborat bo'lishi mumkin:
+  def get_name(self):
+        """Talabaning ismini qaytaradi"""
+        return self.name   
+
+  def get_lastname(self):
+        """Talabaning familiyasini qaytaradi"""
+        return self.lastname     
+
+  def get_fullname(self):
+        """Talabaning ism-familiyasini qaytaradi"""
+        return f"{self.name} {self.lastname}"        
+
+talaba1=Talaba('Olim','Alimov',1880)
+
+# obyektning xususiyatlarini kurish
+print(talaba1.name)    
+print(talaba1.lastname)
+print(talaba1.byear)
+
+# KLASSDAN BIR NECHTA OBYEKTLAR YARATISH
+talaba2 = Talaba("Olim","Olimov",1995)
+talaba3 = Talaba("Husan","Akbarov",2004)
+talaba4 = Talaba("Hasan","Akbarov",2004)
+
+# bunda har bir obyekt uzining alohida xususiyati ega buladi
+
+print(talaba2.name)
+
+print(talaba4.lastname)
+
+# KLASSGA METODLAR QO'SHAMIZ
+
+print(talaba4.tanishtir())
+print(talaba2.get_name())
+print(talaba1.get_lastname())
+print(talaba3.get_fullname())

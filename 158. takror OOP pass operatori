@@ -1,0 +1,18 @@
+# pass operatori
+
+# Pythonda hech qanday vazifani bajarmaydigan pass operatori mavjud. Bu operatordan bo'sh metodlar yaratishda foydalanish mumkin. Misol uchun siz klassingiz uchun muhim metodlarni bilasiz, lekin metod badani hali tayyor emas. Agar metod badanini bo'sh qoldirsangiz, Python IndentationError xatosini qaytaradi. Shunday xolatlarda, funksiya badaniga pass operatorini qo'yib ketishimiz mumkin:
+
+
+
+class User:
+  """user lassi yasadik"""
+  def __init__(self,name,fullname,email):
+    self.name=name,
+    self.fullname=fullname
+    self.email=email
+
+  def describe():
+    pass
+
+  def get_email():
+    pass    

@@ -1,0 +1,8 @@
+x = 10
+print(type(x))
+
+matn='salom'
+print(type(matn))
+
+y=-9.36
+print(type(y))

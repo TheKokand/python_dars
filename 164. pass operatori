@@ -1,0 +1,12 @@
+# pass OPERATORI
+class User:
+  def __init__(self,name,username,email):
+    self.name=name
+    self.username=username
+    self.email=email
+
+  def describe():
+    pass
+    
+  def get_email():
+    pass  

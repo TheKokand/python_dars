@@ -1,0 +1,17 @@
+# Web sahifangiz uchun foydalanuvchi (user) klassini tuzing. Klassning xususiyatlari sifatida odatda ijtimoiy tarmoqlar talab qiladigan ma'lumotlarni kiriting (ism, foydalanuvchi ismi, email, va hokazo)
+class User:
+  """user klassini yasadik"""
+  def __init__(self,name,username,age,gender,email):
+    self.name=name
+    self.username=username
+    self.age=age
+    self.gender=gender
+    self.email=email
+
+# Klassga bir nechta metodlar qo'shing, jumladan get_info() metodi foydalanuvchi haqida yig'ilgan ma'lumotlarni chiroyli qilib chiqarsin (masalan: "Foydalanuvchi: alijon1994, ismi: Alijon Valiyev, email: alijon1994@gmail.com).
+
+  def get_info(self):
+    return f"{self.name} {self.username} {self.gender} {self.age} yoshda"
+
+user1=User('olol','lolo',27,'erkak','olol@ol.lo')
+print(user1.get_info())

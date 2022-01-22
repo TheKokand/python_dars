@@ -1,0 +1,32 @@
+class Talaba:
+  """Talaba nomli klass yasadik"""
+  def __init__(self,ism,familiya,tyil):
+    self.ism=ism
+    self.familiya=familiya
+    self.tyil=tyil
+
+
+  def get_info(self):
+    """talaba haqida ma'lumot qaytaruvchi metod"""
+    return f"{self.ism} {self.familiya} {self.tyil}-yil tugilgan"
+
+  def get_ism(self):
+    """Ism qaytaruvchi metod"""
+    return self.ism
+
+  def get_familiya(self):
+    """familiya qaytaruvchi metod"""
+    return self.familiya  
+
+  def get_fullname(self):
+    """tuliq ism qaytaradi"""
+    return f"{self.ism} {self.familiya}"
+
+
+talaba1=Talaba('Olim','Olimov',1990)
+talaba2=Talaba('komil','komilov',1998)
+talaba3=Talaba('odil','odilov',1998)
+print(talaba1.get_info())
+print(talaba2.get_ism())
+print(talaba2.get_familiya())
+print(talaba3.get_fullname())

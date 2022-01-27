@@ -1,0 +1,51 @@
+class Talaba:
+  """Talaba klasini yaratik"""
+  def __init__(self,ism,familiya,tyil):
+    self.ism=ism
+    self.familiya=familiya
+    self.tyil=tyil
+    self.bosqich=1
+
+  def get_info(self):
+    return f"{self.ism} {self.familiya} {self.bosqich}-bosqich talabasi."
+
+#  obyekt xususiyatini yangilovchi metod yozish.
+
+  def set_bosqich(self,bosqich):
+      self.bosqich=bosqich
+
+# Umuman olganda xususiyatlarni yangilashda turli usullardan foydalanish mumkin. Misol uchun talabaning bosqichi odatda 1 tadan ko'payib boradi, shuning uchun quyidagicha metod ham yozishimiz mumkin:
+
+  def update_bosqich(self):
+    """Talabaning bosqichini yangilovchi metod"""
+    self.bosqich+=1
+
+
+
+
+# OBYEKTLAR O'RTASIDA MUNOSABAT
+
+class Fan:
+  def __init__(self,nomi):
+    self.nomi=nomi
+    self.talabalar_soni=0
+    self.talabalar=[]
+
+  def add_student(self,talaba):
+    """Fanga talabalar qushish"""
+    self.talabalar.append(talaba)
+    self.talabalar_soni+=1
+
+
+matematika=Fan('Oliy matematika')
+talaba1=Talaba('olim','olimov',2000)
+talaba2=Talaba('odil','odilov',2001)
+talaba3=Talaba('ali','valiyev',1998)
+
+matematika.add_student(talaba1)
+matematika.add_student(talaba2)
+matematika.add_student(talaba3)
+
+print(matematika.talabalar_soni)
+print(matematika.talabalar)
+
